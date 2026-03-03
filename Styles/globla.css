@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brand-color: #60A5FA;
+    --shape-transparency: hsla(0, 0%, 100%, 0.677);
+    --background-color: #0F172A;
+    --brand-color-dark: #1D4ED8;
+    --stroke-color: #1E293B;
+    --text-color-prymary: #F1F5FE;
+    --text-color-secondary: #CBD5E1;
+
+
+}
+
+body{
+    color: var(--text-color-secondary);
+    background-color: var(--background-color);
+}
