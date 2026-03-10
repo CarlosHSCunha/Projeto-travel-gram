@@ -47,6 +47,10 @@ a:hover{
     grid-auto-flow: column;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container{
     max-width: 1200px;
     margin-inline: auto;
