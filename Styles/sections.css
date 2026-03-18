@@ -1,0 +1,80 @@
+.card{
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content:"";
+        position: absolute;
+        inset: 0;
+        top: 50%;
+        background: linear-gradient(
+            180deg,
+            transparent 0%,
+            #020617 100%
+        );
+    }
+
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        padding: 24px;
+
+        &:has(.text-lg){
+            padding: 12px;
+                }
+
+
+        h2{
+            margin-top: 8px;
+        }
+    }
+}
+
+.card:hover{
+    background-color: #666;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+
+}
+
+.card img{
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+#weekly{
+
+    &>div{
+        grid-template-columns: repeat(4, 292px);
+    }
+
+    img{
+        height: 160px;
+}
+
+}
+
+section header{
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+
+    header a{
+        justify-self: end;
+
+        span{
+            background-image: url(../assets/icons/arrow-right.svg);
+            height: 16px;
+            width: 16px;
+        }
+}
+
+#weekly{
+    
+    &:hover span{
+            background-image: url(../assets/icons/arrow-right.svg);
+        }
+    }
+}
